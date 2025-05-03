@@ -174,7 +174,7 @@ class TrainOptions():
                 args[group.title] = argparse.Namespace(**group_dict)
 
         opt = argparse.Namespace(**args)
-        delattr(opt)
+        delattr(opt,'config_file')
 
         # output directory
         if opt.name:
